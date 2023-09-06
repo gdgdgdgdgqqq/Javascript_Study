@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>즉시실행함수</title>
+    <script>
+        (function(){
+            console.log('즉시실행함수 방법 1');
+        })();
+
+        
+        var instant=(function(){
+            console.log('즉시실행함수 방법 2');
+        })();
+
+        function add(){
+            var n=0;
+            return function(){
+                return ++n;
+            }
+        }
+
+        var increase=add();
+        console.log(increase());
+        console.log(increase());
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
