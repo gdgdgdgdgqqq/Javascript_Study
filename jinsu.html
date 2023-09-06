@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let dec = prompt("진수를 알아볼 숫자를 입력하세요.");
+        let bin=parseInt(dec).toString(2);
+        let oct=parseInt(dec).toString(8);
+        let hex=parseInt(dec).toString(16);
+        document.writeln("<h2>2진수 : " + bin + "</h2>");
+        document.writeln("<h2>8진수 : 0" + oct + "</h2>");
+        document.writeln("<h2>16진수 : 0x" + hex.toUpperCase() + "</h2>");
+    </script>
+</head>
+<body>
+</body>
+</html>
